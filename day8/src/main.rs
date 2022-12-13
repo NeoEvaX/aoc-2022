@@ -12,6 +12,18 @@ fn main() -> Result<()> {
         grid.push(input[x].chars().flat_map(|ch| ch.to_digit(10)).collect());
     });
 
+    // let file = include_str!("./input.txt");
+    // let trees = file
+    //     .lines()
+    //     .map(|line| {
+    //         return line
+    //             .chars()
+    //             .filter_map(|x| x.to_digit(10))
+    //             .map(|x| x as usize)
+    //             .collect::<Vec<usize>>();
+    //     })
+    //     .collect::<Vec<Vec<usize>>>();
+
     for x in 0..grid.len() {
         for y in 0..grid[x].len() {
             if x == 0 {
